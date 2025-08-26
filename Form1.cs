@@ -331,7 +331,7 @@ namespace playfair
                             "\n\nNotes:" +
                             "\n\tAll special symbols will be deleted." +
                             "\n\tAll numbers are filtered to XWORDX." +
-                            "\n\tAll spaces are filtered to XMEZERAX.");
+                            "\n\tAll spaces are filtered to XSPACEX.");
         }
 
         string Keyword_Filter_EN(string keyword)
@@ -606,7 +606,7 @@ namespace playfair
                 }
                 else if (c == ' ')
                 {
-                    filteredText = filteredText + "XMEZERAX";
+                    filteredText = filteredText + "XSPACEX";
                 }
                 else if (char.IsDigit(c))
                 {
@@ -665,7 +665,7 @@ namespace playfair
                 }
                 else if (c == ' ')
                 {
-                    filteredText = filteredText + "XMEZERAX";
+                    filteredText = filteredText + "XSPACEX";
                 }
                 else if (char.IsDigit(c))
                 {
@@ -726,7 +726,7 @@ namespace playfair
                 }
                 else if (c == ' ')
                 {
-                    filteredText = filteredText + "XMEZERAX";
+                    filteredText = filteredText + "XSPACEX";
                 }
                 else if (char.IsDigit(c))
                 {
@@ -833,7 +833,7 @@ namespace playfair
                     defilteredText = defilteredText.Replace($"{numbers_cz[i]}", $"{numbers_cz.Keys.ElementAt(i)}");
                 }
             }
-            defilteredText = defilteredText.Replace("XMEZERAX", " ");
+            defilteredText = defilteredText.Replace("XSPACEX", " ");
             
             string defilteredTextFinal = "";
             doubleLetter = false;
